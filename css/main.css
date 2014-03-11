@@ -103,7 +103,6 @@ menu {
 menu {    
     list-style: none;
     list-style-image: none;
-    font-size: 0;
     text-align: justify;
 }
 
@@ -117,13 +116,56 @@ menu:after {
     display: inline-block;
     width: 100px;
     height: 100px;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
     vertical-align: top;
     background: rgba(255,255,255,0.6);
     font-size: 16px;
     text-align: center;
     cursor: pointer;
 }
+
+/* Chatroom */
+
+#send-form {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.send-msg {
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 5px;
+    opacity: 0.7;
+}
+
+#send-button {
+    width: 100px;
+    padding: 5px 15px;    
+    border: 0;
+    background: rgba(107, 115, 206, 0.8);
+    box-shadow: 0px 0px 10px 1px blue inset;
+}
+
+#send-button:focus {
+    box-shadow: 0px 0px 20px 2px blue inset;
+}
+
+.send-msg:focus,
+#send-button:focus {
+    outline: 0;
+}
+
+.team-chat {
+    box-sizing: border-box;
+    width: 100%;
+    height: 600px;
+    padding: 10px;
+    background: rgba(255,255,255,0.6);
+    overflow-y: scroll;
+}
+
+/* Private Chat */
 
 .post {
     position: relative;
@@ -168,7 +210,7 @@ menu:after {
 
 menu {    
     color: white;
-    padding: 0px 5% 10px;
+    padding: 20px 5% 10px;
 }
 
 .footer-container {
@@ -238,7 +280,7 @@ menu {
     }
 
     menu {
-        width: 200px;
+        width: 210px;
     }
 
 }

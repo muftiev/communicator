@@ -95,12 +95,17 @@ body {
     color: white;
 }
 
-menu {
+aside {
     background: rgba(255,255,255,0.6);
+}
+
+menu {
     margin: 0;    
 }
 
 menu {    
+    margin: 0;
+    padding: 0;
     list-style: none;
     list-style-image: none;
     text-align: justify;
@@ -123,6 +128,14 @@ menu:after {
     text-align: center;
     cursor: pointer;
 }
+
+.menu-link {
+    display: block;
+    height: 100%;
+    text-decoration: none;
+    color: white;
+}
+
 
 /* Chatroom */
 
@@ -163,6 +176,38 @@ menu:after {
     padding: 10px;
     background: rgba(255,255,255,0.6);
     overflow-y: scroll;
+}
+
+.rooms,
+.users {
+    margin: 0;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    border-top: 2px solid rgba(120,120,120,0.8);
+}
+
+.room-list,
+.user-list {
+    margin: 0;
+    list-style: none;
+}
+
+.user-list-item {
+    margin-bottom: 5px;
+}
+
+.user-list-item .user-list-item-link {
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+.user-list-item .user-list-item-img {
+    width: 40px;
+    margin-right: 10px;
+    background: white;
+    border-radius: 5px;
+    border: 2px solid purple;
 }
 
 /* Private Chat */
@@ -208,7 +253,7 @@ menu:after {
     font-size: 2em;
 }
 
-menu {    
+aside {    
     color: white;
     padding: 20px 5% 10px;
 }
@@ -258,13 +303,19 @@ menu {
         vertical-align: top;
     }    
 
-    menu {
+    aside {
         position: absolute;
         top: 0;
         bottom: 0;
         right: 0;
         width: 30%;
+        max-width: 300px;
         padding: 30px 10px 120px 15px;
+    }
+
+    menu {
+        width: 225px;
+        margin: 0 auto;
     }
 }
 
@@ -279,8 +330,12 @@ menu {
         margin: 0 auto;
     }
 
-    menu {
+    aside {
         width: 210px;
+    }
+
+    menu {
+        width: auto;
     }
 
 }

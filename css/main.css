@@ -178,7 +178,6 @@ menu:after {
     overflow-y: scroll;
 }
 
-.rooms,
 .users {
     margin: 0;
     margin-bottom: 20px;
@@ -186,7 +185,6 @@ menu:after {
     border-top: 2px solid rgba(120,120,120,0.8);
 }
 
-.room-list,
 .user-list {
     margin: 0;
     list-style: none;

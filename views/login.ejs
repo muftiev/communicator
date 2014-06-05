@@ -1,0 +1,58 @@
+<% layout('page') -%>
+
+<link rel="stylesheet" href="/css/auth.css"/>
+<div class="login-form-wrap">
+    <div id="login" class="login-form">
+        <form name="login-form" autocomplete="on">
+            <h2>Log in</h2>
+            <p>
+                <label for="username" class="uname"> Your email or username </label>
+                <input id="username" name="username" required="required" type="text" placeholder="myusername"/>
+            </p>
+            <p>
+                <label for="password" class="youpasswd"> Your password </label>
+                <input id="password" name="password" required="required" type="password" placeholder="eg. X8df!90EO" />
+            </p>
+            <!--<p class="keeplogin">-->
+                <!--<input type="checkbox" name="loginkeeping" id="loginkeeping" value="loginkeeping" />-->
+                <!--<label for="loginkeeping">Keep me logged in</label>-->
+            <!--</p>-->
+            <p class="login button">
+                <input type="submit" value="Login" />
+            </p>
+            <span class="help-block error"></span>
+
+        </form>
+    </div>
+</div>
+
+<script>
+    $(document.forms['login-form']).on('submit', function(e) {
+        e.preventDefault();
+        var form = $(this);
+
+        $('.error', form).html('');
+
+        $.ajax({
+            url: "/login",
+            type: "POST",
+            data: form.serialize(),
+            statusCode: {
+                200: function(jqXHR) {
+                    var answ = jqXHR;
+                    if(answ.type == 'error'){
+                        $('.error', form).html(answ.message);
+                    } else{
+                        form.html("Вы вошли в сайт").addClass('alert-success');
+                        window.location.href = "/";
+                    }
+                },
+                403: function(jqXHR) {
+                    var error = JSON.parse(jqXHR.responseText);
+                    $('.error', form).html(error.message);
+                }
+
+            }
+        });
+    });
+</script>

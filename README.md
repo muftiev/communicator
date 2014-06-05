@@ -1,4 +1,0 @@
-communicator
-============
-
-Team communication app

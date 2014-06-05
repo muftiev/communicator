@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Team Communicator</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/main.css">
+
+    <script type="text/javascript" src="/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/main.js"></script>
+</head>
+<body>
+
+    <div class="header-container">
+        <header class="wrapper clearfix">            
+            <div class="account-block">
+                <a class="account-button" href="#">Username</a>
+                <ul class="account-dropdown">
+                    <li class="account-dropdown-item"><a class="account-dropdown-item-link" onclick="$('<form method=POST action=/logout>').appendTo('body').submit();return false">Logout</a></li>
+                </ul>
+            </div>
+            <h1 class="title">Team Communicator</h1>
+        </header>
+    </div>
+    <div class="wrap">
+
+        <%-body -%>
+
+    </div>
+
+    <div class="footer-container">
+        <footer class="wrapper">
+            <h4>by Ruslan Muftiev & Sergey Tkachenko</h4>
+        </footer>
+    </div>
+    <audio id="in-sound" src="/img/ring.ogg"></audio>
+</body>
+</html>

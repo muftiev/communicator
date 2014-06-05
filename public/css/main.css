@@ -1,0 +1,835 @@
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+img {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ===== Initializr Styles ==================================================
+   Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
+   ========================================================================== */
+
+body {
+    min-height: 100%;
+    font: 16px/26px Helvetica, Helvetica Neue, Arial;
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 5%;
+}
+
+/* ===================
+    ALL: Theme
+   =================== */
+
+body {
+    background-image: url('../img/bg.jpg');
+    background-color: rgb(0, 0, 0);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    font-family: Calibri,Helvetica,Arial,sans-serif;
+}
+
+.header-container {
+    border-bottom: 20px solid #e44d26;
+}
+
+.header-container,
+.footer-container {
+    background: rgba(107, 115, 206, 0.8);
+    border: none;
+}
+
+.header-container .title {
+    color: white;
+}
+
+.header-container .title,
+.account-block {
+    margin-top: 10px;
+}
+
+.account-block {
+    position: relative;
+    float: right;
+}
+
+.account-button {
+    text-decoration: none;
+    color: white;    
+}
+
+.account-button:after {
+    content: "▾";
+    font-family: entypo;
+    margin-left: 4px;
+}
+
+.account-button.is-active:after {
+    content: "▴";
+}
+
+.account-dropdown {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    display: none;
+    margin-top: 8px;
+    position: absolute;
+    right: 0;
+    width: 100px;
+    padding: 0; 
+    z-index: 99999;
+    list-style: none;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.33);
+    -moz-box-shadow: 0 0 10px rgba(0,0,0,0.33);
+    box-shadow: 0 0 10px rgba(0,0,0,0.33);
+    background: rgba(255,255,255,0.8);
+}
+
+.account-button.is-active + .account-dropdown {
+    display: block;
+}
+
+.account-dropdown-item {
+    text-align: right;
+    font-size: 14px;
+}
+
+.account-dropdown-item-link {
+    display: block;
+    padding: 0 15px;
+    text-decoration: none;
+    color: #7a7a8a;
+    cursor: pointer;
+}
+
+menu {
+    margin: 0;    
+}
+
+menu {    
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    list-style-image: none;
+    text-align: center;
+    letter-spacing: 15px;
+}
+
+menu:after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+}
+
+.menu-item {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    margin-bottom: 10px;
+    vertical-align: top;
+    cursor: pointer;
+}
+
+.menu-link {
+    display: block;
+    height: 100%;
+    border-radius: 50%;
+    text-decoration: none;
+    color: white;
+}
+
+.menu-link-img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+
+/* Chatroom */
+
+#send-form {
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+#send-form:after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+}
+
+.send-msg {
+    display: inline-block;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 75%;
+    margin-bottom: 10px;
+    padding: 5px;
+    opacity: 0.8;
+    resize: none;
+}
+
+#send-button {
+    display: inline-block;
+    width: 20%;
+    min-width: 50px;
+    height: 50px;
+    padding: 5px 5px;
+    border: 0;
+    background: rgba(107, 115, 206, 0.8);
+    box-shadow: 0px 0px 10px 1px blue inset;
+}
+
+#send-button:focus {
+    box-shadow: 0px 0px 20px 2px blue inset;
+}
+
+.send-msg:focus,
+#send-button:focus,
+#get-previous:focus {
+    outline: 0;
+}
+
+.team-chat {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    background: rgba(255,255,255,0.8);
+    overflow-y: scroll;
+    font-size: 14px;
+}
+
+.team-chat .message-date,
+.team-chat .message-sender {
+    font-weight: bold;
+    color: rgb(21, 133, 177);
+    margin-right: 5px;
+}
+
+.team-chat .message-date {
+    color: rgb(130, 130, 130);
+}
+
+.team-chat .message-date:before {
+    content: "[";
+}
+
+.team-chat .message-date:after {
+    content: "]";
+}
+
+.team-chat .message-sender:after {
+    content: ":";
+}
+
+.users {
+    margin: 0;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    border-top: 2px solid rgba(120,120,120,0.8);
+}
+
+.user-list {
+    margin: 0;
+    list-style: none;
+    font-size: 0;
+}
+
+.user-list-item {
+    display: inline-block;
+    width: 45%;
+    margin-right: 5%;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.user-list-item:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.user-list-item .user-list-item-link {
+    display: block;
+    text-decoration: none;
+    color: rgb(21, 133, 177);
+}
+
+.user-list-item .user-list-item-img {
+    float: left;
+    width: 28px;
+    margin-right: 10px;
+    background: white;
+    border-radius: 5px;
+    border: 2px solid purple;
+}
+
+/* Private Chat */
+
+.post {
+    position: relative;
+    width: 70%;
+    margin-bottom: 20px;
+    padding: 10px;
+    background: rgba(255,255,255,0.8);
+}
+
+.post:before {
+    content: "";
+    position: absolute;
+    display: block;
+    border: 10px solid transparent;
+}
+
+.post.left:before {
+    right: -20px;
+    border-left: 10px solid rgba(255,255,255,0.8);
+}
+
+.right {
+    margin-left: 30%;
+}
+
+.post.right:before {
+    left: -20px;
+    border-right: 10px solid rgba(255,255,255,0.8);
+}
+
+/* Sidebar */
+
+aside {    
+    color: white;
+    padding: 20px 5% 10px;
+}
+
+/* Footer */
+
+.footer-container {
+    width: 100%;
+    height: 100px;
+}
+
+.footer-container footer {   
+    position: relative;
+    height: 100%;
+    color: white;
+}
+
+.footer-container footer h4 {   
+    position: absolute;
+    bottom: 0;
+}
+
+/* ==============
+    MOBILE: Main
+   ============== */
+
+.header-container {
+    position: fixed;
+    top: -360px;
+    width: 100%;
+    height: 40px;
+    z-index: 99999;
+    background: rgb(107, 115, 206);
+}
+
+.header-container.active {
+    top: 0;
+}
+
+.header-container .title {
+    font-size: 1em;
+}
+
+.account-block {
+    font-size: 14px;
+}
+
+aside {
+    position: absolute;
+    top: -360px;    
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 100%;
+    height: 360px;
+    z-index: 9999;
+    background: #fff;
+}
+
+aside.active {
+    top: 40px;
+}
+
+.menu-switcher {
+    position: absolute;
+    right: 0;
+    bottom: -30px;
+    display: block;
+    width: 60px;
+    height: 30px;
+    padding: 0 10px;
+    border-radius: 0 0 10px 10px;
+    background: #fff;
+    text-align: right;
+    color: rgb(21, 133, 177);
+    cursor: pointer;
+}
+
+.menu-switcher:before {
+    content: "▾";
+    float: left;
+}
+
+.active .menu-switcher:before {
+    content: "▴";
+}
+
+.header-container,
+aside {
+    transition: top 0.5s;
+}
+
+menu {
+    text-align: center;
+    font-size: 40px;
+}
+
+.user-list {
+    font-size: 0;
+}
+
+.user-list-item {
+    display: inline-block;
+    width: 45%;
+    min-width: 120px;
+    margin-right: 5%;
+    font-size: 16px;
+}
+
+body > .wrap {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%; 
+}
+
+.main {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    height: 100%;
+    padding: 30px 0 40px 0;
+}
+
+main {
+   height: 100%; 
+}
+
+.content-wrapper {
+    position: relative;
+    height: 100%;
+}
+
+#send-form {
+    height: 50px;
+    padding-top: 10px;
+}
+
+.footer-container {
+    display: none;
+}
+
+.team-chat {
+    position: absolute;
+    top: 80px;
+    bottom: 0;
+}
+
+#get-previous {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    background: rgb(180,180,180);
+    color: rgb(130, 130, 130);
+    font-size: 14px;
+}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+.login-form-wrap {
+    width: 100%;
+    margin-top: 30px; 
+    text-align: center;
+}
+
+.login-form {
+    width: 30%;
+}
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 768px) {
+
+/* ====================
+    WIDE: CSS3 Effects
+   ==================== */
+
+    
+
+/* ============
+    WIDE: Main
+   ============ */
+
+    html, body {
+        height: 100%;
+    }
+
+    .header-container {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 60px;
+        background: rgba(107, 115, 206, 0.8);
+    }
+
+    .header-container .title {
+        font-size: 2em;
+    }
+
+    .account-block {
+        font-size: 16px;
+    }
+
+    .footer-container {
+        position: fixed;
+        bottom: 0;
+        display: block;
+        height: 80px;
+    }
+
+    body > .wrap {
+        position: absolute;
+        top: 60px;
+        bottom: 80px;
+        left: 0;
+        right: 0;
+    }
+
+    .main {
+        width: 52%;
+        height: 100%;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        padding: 30px 0;
+        vertical-align: top;
+    }
+
+    .main main,
+    .main main .content-wrapper {
+        position: relative;
+        height: 100%;
+    }
+
+    .main #send-form {
+        position: absolute;
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    .main .team-chat {
+        position: absolute;
+        top: 86px;
+        bottom: 0;
+        font-size: 16px;
+    }
+
+    aside {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        width: 30%;
+        height: auto;
+        max-width: 300px;
+        padding: 30px 10px 30px 15px;
+        background: rgba(255,255,255,0.8);
+        z-index: 999;
+    }
+
+    .menu-switcher {
+        display: none;
+    }
+
+    menu {
+        width: auto;
+        margin: 0 auto;
+        letter-spacing: 0;
+    }
+
+    .menu-item {
+        width: 80px;
+        height: 80px;
+    }
+
+    .user-list-item {
+        display: block;
+        width: auto;
+        margin-right: 0;
+    }
+
+    .user-list-item {
+        display: block;
+        width: auto;
+        margin-right: 0;
+    }
+
+}
+
+@media only screen and (min-width: 768px) and (max-height: 500px) {
+
+    .main #send-form {
+        height: 60px;
+        margin-bottom: 20px;
+    }
+
+    .main .team-chat {
+        height: 100px;
+    }
+
+    .menu-item {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 0;
+    }
+
+}
+
+@media only screen and (min-width: 1024px) {
+
+    menu {
+        text-align: justify;
+        font-size: 0;
+    }
+
+    .menu-item {
+        width: 48px;
+        height: 48px;
+        margin-bottom: 0;
+    }
+
+}
+
+@media only screen and (min-width: 1300px) {
+
+/* ===============
+    Maximal Width
+   =============== */
+
+    .wrapper {
+        width: 800px; /* 1140px - 10% for margins */
+        margin: 0 auto;
+    }
+
+    aside {
+        width: 230px;
+    }
+
+    menu {
+        width: auto;
+    }    
+
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

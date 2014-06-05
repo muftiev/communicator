@@ -1,0 +1,29 @@
+{
+  "name": "team-communicator",
+  "version": "0.0.0",
+  "description": "simple app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "tkachenko1503",
+  "license": "ISC",
+  "dependencies": {
+    "logfmt": "^0.21.0",
+    "express": "^3.4.8",
+    "less-middleware": "^0.1.15",
+    "ejs": "^0.8.5",
+    "ejs-locals": "^1.0.2",
+    "crypto": "0.0.3",
+    "socket.io": "^0.9.16",
+    "async": "^0.2.10",
+    "connect-mongo": "^0.4.0",
+    "mongoose": "^3.8.8",
+    "cookie": "^0.1.1",
+    "connect": "^2.14.2",
+    "mongodb": "^1.3.23"
+  },
+  "engines": {
+    "node": "0.10.x"
+  }
+}
